@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>약속, 회원가입</title>
+
+    <link rel="stylesheet" href="css/membership.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <!-- 헤더 -->
+      <header class="header">
+        <div class="container header-inner">
+          <div class="header-left">
+            <a href="#" class="logo">
+              <img src="assets/icons/logo.png" alt="약속 로고" />
+            </a>
+
+            <nav class="nav">
+              <a href="#" class="active">홈</a>
+              <a href="#">기능</a>
+              <a href="#">고객센터</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!-- 메인 -->
+      <main class="main">
+        <div class="container main-inner">
+          <!-- 왼쪽 비주얼 -->
+          <section class="hero">
+            <div class="hero-image">
+              <img
+                src="assets/icons/dlgydls.png"
+                alt="약 복용 관리 메인 이미지"
+              />
+            </div>
+          </section>
+
+          <!-- 오른쪽 회원가입 -->
+          <section class="signup-panel">
+            <a href="#" class="back-button" aria-label="뒤로가기">‹</a>
+
+            <div class="signup-heading">
+              <h2 class="signup-title">회원가입</h2>
+              <p class="signup-subtitle">
+                회원님의 소중한 정보를 입력해 주세요 : )
+              </p>
+            </div>
+
+            <form class="signup-form">
+              <div class="input-group">
+                <input type="text" placeholder="이름을 입력해주세요" />
+              </div>
+
+              <div class="input-group input-with-action">
+                <input type="text" placeholder="전화번호" />
+                <button type="button" class="input-action-btn">
+                  인증번호 전송
+                </button>
+              </div>
+
+              <div class="input-group input-with-action">
+                <input type="text" placeholder="아이디" />
+                <button type="button" class="input-action-btn">
+                  중복 확인
+                </button>
+              </div>
+
+              <div class="input-group">
+                <input type="password" placeholder="비밀번호" />
+              </div>
+
+              <div class="input-group">
+                <input type="password" placeholder="비밀번호 확인" />
+              </div>
+
+              <div class="agree-box">
+                <label class="agree-all">
+                  <input type="checkbox" />
+                  <span>모두 동의 합니다.</span>
+                </label>
+
+                <div class="agree-list">
+                  <label class="agree-item">
+                    <input type="checkbox" />
+                    <span>이용약관 동의(필수)</span>
+                  </label>
+
+                  <label class="agree-item">
+                    <input type="checkbox" />
+                    <span>개인정보 취급방침 동의(필수)</span>
+                  </label>
+
+                  <label class="agree-item">
+                    <input type="checkbox" />
+                    <span>마케팅 정보 수신 동의 (선택)</span>
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" class="signup-submit-btn">다음</button>
+            </form>
+          </section>
+        </div>
+      </main>
+
+      <!-- 푸터 -->
+      <footer class="footer">
+        <div class="container footer-inner">
+          <div class="footer-links">
+            <a href="#">이용약관</a>
+            <span>|</span>
+            <a href="#">개인정보 방침</a>
+            <span>|</span>
+            <a href="#">고객지원</a>
+          </div>
+
+          <p class="copyright">© 2026 Yaksok. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
