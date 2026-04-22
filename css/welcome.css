@@ -1,0 +1,147 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+:root {
+  --blue-30: #d6e6f2;
+  --blue-40: #bed8f5;
+  --blue-50: #7cb0ea;
+  --blue-100: #5095e3;
+
+  --color-bg-primary: #f7fbfc;
+
+  --size-sm: 14px;
+  --size-md: 16px;
+  --size-lg: 18px;
+  --size-2xl: 22px;
+  --size-3xl: 24px;
+  --size-4xl: 28px;
+  --size-5xl: 36px;
+
+  --container-max: 1280px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Pretendard", sans-serif;
+  background: var(--color-bg-primary);
+  color: #111;
+}
+
+/* layout */
+.welcome-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.welcome-content {
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.welcome-sub {
+  font-size: 16px;
+  color: #9aa0a6;
+  margin-bottom: 40px;
+}
+
+.welcome-image-wrap {
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.welcome-image {
+  width: 100%;
+}
+
+/* 버튼 */
+.start-button {
+  width: 90%;
+  max-width: 420px;
+  height: 72px;
+  margin: 0 auto 32px;
+  border-radius: 40px;
+  background: var(--blue-100);
+  color: #fff;
+  font-size: var(--size-2xl);
+  font-weight: 600;
+  display: block;
+  border: none;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .welcome-content {
+    max-width: 520px;
+  }
+
+  .welcome-title {
+    font-size: 36px;
+  }
+
+  .welcome-sub {
+    font-size: 18px;
+    margin-bottom: 48px;
+  }
+
+  .welcome-image-wrap {
+    max-width: 320px;
+  }
+
+  .start-button {
+    height: 80px;
+    font-size: 24px;
+  }
+}
+
+/* web */
+@media screen and (min-width: 1024px) {
+  .welcome-content {
+    max-width: 640px;
+  }
+
+  .welcome-title {
+    font-size: 44px;
+  }
+
+  .welcome-sub {
+    font-size: 20px;
+    margin-bottom: 56px;
+  }
+
+  .welcome-image-wrap {
+    max-width: 500px;
+  }
+
+  .start-button {
+    height: 88px;
+    font-size: 24px;
+  }
+}

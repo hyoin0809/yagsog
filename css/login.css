@@ -1,0 +1,197 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+:root {
+  --blue-30: #d6e6f2;
+  --blue-40: #bed8f5;
+  --blue-50: #7cb0ea;
+  --blue-100: #5095e3;
+
+  --color-bg-primary: #f7fbfc;
+
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+
+  --size-sm: 14px;
+  --size-md: 16px;
+  --size-lg: 18px;
+  --size-2xl: 22px;
+  --size-3xl: 24px;
+  --size-4xl: 28px;
+  --size-5xl: 36px;
+
+  --container-max: 1280px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Pretendard", sans-serif;
+  background: var(--color-bg-primary);
+  color: #111;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.loading-layout {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.loading-main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.loading-content {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.loading-title {
+  font-size: var(--size-4xl);
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.loading-image-wrap {
+  width: 100%;
+  max-width: 880px;
+  margin-bottom: 72px;
+}
+
+.loading-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.progress-area {
+  width: 100%;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 18px;
+  background: var(--blue-30);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.progress-fill {
+  width: 55%;
+  height: 100%;
+  background: var(--blue-100);
+  border-radius: 999px;
+}
+
+.progress-text {
+  font-size: var(--size-md);
+  line-height: 1.5;
+  color: #a6a6a6;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .loading-main {
+    padding: 40px 32px;
+  }
+
+  .loading-content {
+    max-width: 520px;
+  }
+
+  .loading-title {
+    font-size: 36px;
+    margin-bottom: 48px;
+  }
+
+  .loading-image-wrap {
+    max-width: 700px;
+    margin-bottom: 50px;
+  }
+
+  .progress-bar {
+    height: 20px;
+    margin-bottom: 18px;
+  }
+
+  .progress-text {
+    font-size: var(--size-lg);
+  }
+}
+
+/* web */
+@media screen and (min-width: 1024px) {
+  .loading-main {
+    padding: 60px 40px;
+  }
+
+  .loading-content {
+    max-width: 640px;
+  }
+
+  .loading-title {
+    font-size: 48px;
+    margin-bottom: 56px;
+  }
+
+  .loading-image-wrap {
+    max-width: 700px;
+    margin-bottom: 50px;
+  }
+
+  .progress-area {
+    max-width: 540px;
+  }
+
+  .progress-bar {
+    height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .progress-text {
+    font-size: var(--size-lg);
+  }
+}
+
+/* animation */
+@keyframes loadingPulse {
+  0% {
+    width: 35%;
+  }
+  50% {
+    width: 62%;
+  }
+  100% {
+    width: 35%;
+  }
+}
