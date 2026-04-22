@@ -1,0 +1,907 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+:root {
+  --blue-30: #d6e6f2;
+  --blue-40: #bed8f5;
+  --blue-50: #7cb0ea;
+  --blue-100: #5095e3;
+  --bg: #f7fbfc;
+  --shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Pretendard", sans-serif;
+  background: var(--bg);
+  color: #111;
+}
+
+button {
+  font: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.app-layout {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.app-main {
+  padding-bottom: 120px;
+}
+
+.app-statusbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px 14px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.status-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.greeting-card {
+  margin: 0 0 0;
+  background: #edf2f6;
+  padding: 22px 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.greeting-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #d7e5f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.greeting-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.greeting-text h1 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.greeting-text p {
+  font-size: 13px;
+  color: #333;
+}
+
+.today-medicine {
+  background: var(--blue-40);
+  padding: 16px 14px 24px;
+}
+
+.section-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.section-title-row h2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.section-title-row span {
+  font-size: 14px;
+  color: var(--blue-100);
+  font-weight: 600;
+}
+
+.medicine-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.medicine-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.medicine-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.medicine-thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: #d9e6f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.medicine-thumb img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.medicine-info h3 {
+  font-size: 16px;
+  color: #356fb9;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.medicine-info p {
+  font-size: 14px;
+}
+
+.medicine-info p span {
+  color: #888;
+}
+
+.medicine-action {
+  font-size: 13px;
+  color: #bbb;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.medicine-action.complete {
+  color: var(--blue-100);
+}
+
+.weekly-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  margin: 14px 14px 0;
+  padding: 18px 16px;
+}
+
+.weekly-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.weekly-head h2 {
+  font-size: 16px;
+  font-weight: 650;
+}
+
+.weekly-head a {
+  color: #4a80c7;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.weekly-body {
+  display: grid;
+  grid-template-columns: 100px 1px 1fr;
+  gap: 14px;
+  align-items: center;
+}
+
+.rate-circle {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  border: 7px solid var(--blue-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.rate-inner strong,
+.rate-inner span {
+  color: var(--blue-100);
+  font-weight: 800;
+}
+
+.rate-inner strong {
+  font-size: 20px;
+}
+
+.rate-inner span {
+  font-size: 15px;
+}
+
+.week-divider {
+  width: 1px;
+  height: 76px;
+  background: #b9d2ec;
+}
+
+.graph-bars {
+  height: 74px;
+  display: flex;
+  align-items: end;
+  gap: 8px;
+  background: #eef4fa;
+  border-radius: 10px;
+  padding: 10px 10px 0;
+  margin-bottom: 8px;
+}
+
+.bar {
+  flex: 1;
+  background: #cad8e8;
+  border-radius: 8px 8px 0 0;
+}
+
+.bar.low {
+  height: 32px;
+}
+.bar.mid {
+  height: 52px;
+}
+.bar.high {
+  height: 64px;
+}
+.bar.active {
+  background: var(--blue-100);
+}
+
+.graph-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+
+.quick-section {
+  margin: 22px 14px 0;
+}
+
+.quick-section h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.quick-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.quick-card {
+  background: #edf2f6;
+  border-radius: 14px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  padding: 16px 8px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.quick-card img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.quick-card span {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.tip-banner {
+  margin: 20px 14px 0;
+  background: linear-gradient(90deg, #7baee8 0%, #8fb8ee 100%);
+  border-radius: 18px;
+  padding: 16px 14px 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tip-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.75);
+  color: #4a80c7;
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.tip-banner p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 80%;
+}
+
+.tip-heart {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  opacity: 0.55;
+}
+
+.tip-heart img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+}
+
+/* bottom nav */
+.bottom-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f4f4f4;
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.08);
+  padding: 14px 8px calc(14px + env(safe-area-inset-bottom));
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  z-index: 100;
+}
+
+.nav-item {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: #666;
+}
+
+.nav-item img {
+  width: 50px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.nav-item.large img {
+  width: 50px;
+  height: 26px;
+}
+
+.nav-item span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.nav-item.active {
+  color: var(--blue-100);
+}
+
+.nav-item.active span {
+  color: var(--blue-100);
+}
+
+@media (min-width: 768px) {
+  .bottom-nav {
+    height: 80px;
+  }
+
+  .nav-item img {
+    width: 30px;
+  }
+
+  .nav-item span {
+    font-size: 13px;
+  }
+}
+/* =========================
+   web responsive
+========================= */
+@media screen and (min-width: 1024px) {
+  .app-main {
+    padding-bottom: 40px;
+  }
+
+  .app-statusbar {
+    display: none;
+  }
+
+  .bottom-nav {
+    display: none;
+  }
+
+  .app-layout {
+    background: var(--bg);
+  }
+
+  .app-main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 32px 40px 40px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 28px;
+    align-items: start;
+  }
+
+  .greeting-card {
+    grid-column: 1 / -1;
+    margin: 0;
+    border-radius: 24px;
+    padding: 28px 30px;
+  }
+
+  .greeting-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .greeting-icon img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .greeting-text h1 {
+    font-size: 28px;
+  }
+
+  .greeting-text p {
+    font-size: 18px;
+  }
+
+  .today-medicine {
+    margin: 0;
+    border-radius: 24px;
+    padding: 24px;
+    height: fit-content;
+  }
+
+  .section-title-row {
+    margin-bottom: 20px;
+  }
+
+  .section-title-row h2 {
+    font-size: 24px;
+  }
+
+  .section-title-row span {
+    font-size: 16px;
+  }
+
+  .medicine-list {
+    gap: 18px;
+  }
+
+  .medicine-card {
+    padding: 20px 18px;
+    border-radius: 18px;
+  }
+
+  .medicine-left {
+    gap: 16px;
+  }
+
+  .medicine-thumb {
+    width: 64px;
+    height: 64px;
+  }
+
+  .medicine-thumb img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .medicine-info h3 {
+    font-size: 24px;
+  }
+
+  .medicine-info p {
+    font-size: 17px;
+  }
+
+  .medicine-action {
+    font-size: 16px;
+  }
+
+  .weekly-card {
+    margin: 0;
+    padding: 24px;
+    border-radius: 24px;
+    height: fit-content;
+  }
+
+  .weekly-head {
+    margin-bottom: 20px;
+  }
+
+  .weekly-head h2 {
+    font-size: 22px;
+  }
+
+  .weekly-head a {
+    font-size: 16px;
+  }
+
+  .weekly-body {
+    grid-template-columns: 140px 1px 1fr;
+    gap: 20px;
+  }
+
+  .rate-circle {
+    width: 126px;
+    height: 126px;
+    border-width: 8px;
+  }
+
+  .rate-inner strong {
+    font-size: 28px;
+  }
+
+  .rate-inner span {
+    font-size: 18px;
+  }
+
+  .week-divider {
+    height: 96px;
+  }
+
+  .graph-bars {
+    height: 96px;
+    gap: 10px;
+    padding: 12px 14px 0;
+  }
+
+  .bar.low {
+    height: 38px;
+  }
+
+  .bar.mid {
+    height: 62px;
+  }
+
+  .bar.high {
+    height: 76px;
+  }
+
+  .graph-days {
+    font-size: 13px;
+  }
+
+  .quick-section {
+    margin: 0;
+    grid-column: 1 / -1;
+  }
+
+  .quick-section h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .quick-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+
+  .quick-card {
+    border-radius: 18px;
+    padding: 22px 14px 18px;
+  }
+
+  .quick-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .quick-card span {
+    font-size: 18px;
+  }
+
+  .tip-banner {
+    margin: 0;
+    grid-column: 1 / -1;
+    border-radius: 22px;
+    padding: 22px 20px 24px;
+  }
+
+  .tip-badge {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-bottom: 14px;
+  }
+
+  .tip-banner p {
+    font-size: 20px;
+    max-width: 88%;
+  }
+
+  .tip-heart {
+    right: 18px;
+  }
+
+  .tip-heart img {
+    width: 84px;
+    height: 84px;
+  }
+}
+
+/* =========================
+   tablet responsive
+========================= */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .app-statusbar {
+    display: none;
+  }
+
+  .app-main {
+    padding: 24px 24px 130px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 24px;
+    align-items: start;
+  }
+
+  .greeting-card {
+    grid-column: 1 / -1;
+    margin: 0;
+    border-radius: 22px;
+    padding: 28px 24px;
+  }
+
+  .greeting-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .greeting-icon img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .greeting-text h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  .greeting-text p {
+    font-size: 17px;
+  }
+
+  .today-medicine {
+    margin: 0;
+    border-radius: 24px;
+    padding: 22px;
+    height: fit-content;
+  }
+
+  .section-title-row {
+    margin-bottom: 18px;
+  }
+
+  .section-title-row h2 {
+    font-size: 22px;
+  }
+
+  .section-title-row span {
+    font-size: 15px;
+  }
+
+  .medicine-list {
+    gap: 16px;
+  }
+
+  .medicine-card {
+    padding: 18px 16px;
+    border-radius: 18px;
+  }
+
+  .medicine-left {
+    gap: 14px;
+  }
+
+  .medicine-thumb {
+    width: 62px;
+    height: 62px;
+  }
+
+  .medicine-thumb img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .medicine-info h3 {
+    font-size: 22px;
+  }
+
+  .medicine-info p {
+    font-size: 16px;
+  }
+
+  .medicine-action {
+    font-size: 15px;
+  }
+
+  .weekly-card {
+    margin: 0;
+    padding: 22px;
+    border-radius: 22px;
+    height: fit-content;
+  }
+
+  .weekly-head {
+    margin-bottom: 18px;
+  }
+
+  .weekly-head h2 {
+    font-size: 22px;
+  }
+
+  .weekly-head a {
+    font-size: 15px;
+  }
+
+  .weekly-body {
+    grid-template-columns: 130px 1px 1fr;
+    gap: 18px;
+  }
+
+  .rate-circle {
+    width: 118px;
+    height: 118px;
+    border-width: 8px;
+  }
+
+  .rate-inner strong {
+    font-size: 26px;
+  }
+
+  .rate-inner span {
+    font-size: 17px;
+  }
+
+  .week-divider {
+    height: 88px;
+  }
+
+  .graph-bars {
+    height: 94px;
+    gap: 9px;
+    padding: 12px 12px 0;
+  }
+
+  .bar.low {
+    height: 36px;
+  }
+
+  .bar.mid {
+    height: 58px;
+  }
+
+  .bar.high {
+    height: 74px;
+  }
+
+  .graph-days {
+    font-size: 13px;
+  }
+
+  .quick-section {
+    grid-column: 1 / -1;
+    margin: 6px 0 0;
+  }
+
+  .quick-section h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .quick-grid {
+    max-width: 760px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+
+  .quick-card {
+    border-radius: 16px;
+    padding: 20px 12px 16px;
+  }
+
+  .quick-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .quick-card span {
+    font-size: 18px;
+  }
+
+  .tip-banner {
+    grid-column: 1 / -1;
+    margin: 4px 0 0;
+    padding: 20px 18px 22px;
+    border-radius: 20px;
+  }
+
+  .tip-badge {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+
+  .tip-banner p {
+    font-size: 17px;
+    max-width: 88%;
+  }
+
+  .tip-heart {
+    right: 16px;
+  }
+
+  .tip-heart img {
+    width: 74px;
+    height: 74px;
+  }
+
+  .bottom-nav {
+    height: 88px;
+    padding: 16px 12px calc(16px + env(safe-area-inset-bottom));
+    border-radius: 24px 24px 0 0;
+  }
+
+  .nav-item {
+    height: 64px;
+    gap: 6px;
+  }
+
+  .nav-item img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-item span {
+    font-size: 13px;
+  }
+}

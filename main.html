@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>약속 메인</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="app-layout">
+      <main class="app-main">
+        <div class="app-statusbar">
+          <span class="time">9:41</span>
+          <div class="status-icons">
+            <span>📶</span>
+            <span>📡</span>
+            <span>🔋</span>
+          </div>
+        </div>
+
+        <section class="greeting-card">
+          <div class="greeting-icon">
+            <img src="assets/icons/tkfka.png" alt="사용자 아이콘" />
+          </div>
+          <div class="greeting-text">
+            <h1>안녕하세요 00님 👋</h1>
+            <p>오늘도 건강한 하루 보내세요!</p>
+          </div>
+        </section>
+
+        <section class="today-medicine">
+          <div class="section-title-row">
+            <h2>오늘의 복용 약 💊</h2>
+            <span>4월 3일(금)</span>
+          </div>
+
+          <div class="medicine-list">
+            <article class="medicine-card">
+              <div class="medicine-left">
+                <div class="medicine-thumb">
+                  <img src="assets/icons/dkfdir.png" alt="비타민" />
+                </div>
+                <div class="medicine-info">
+                  <h3>아침 08:00</h3>
+                  <p>비타민B 복합체 <span>1정 복용</span></p>
+                </div>
+              </div>
+              <button class="medicine-action complete">복용완료 ✓</button>
+            </article>
+
+            <article class="medicine-card">
+              <div class="medicine-left">
+                <div class="medicine-thumb">
+                  <img src="assets/icons/dnlwkddir.png" alt="위장약" />
+                </div>
+                <div class="medicine-info">
+                  <h3>점심 12:00</h3>
+                  <p>위장약 <span>1정 복용</span></p>
+                </div>
+              </div>
+              <button class="medicine-action">복용하기</button>
+            </article>
+
+            <article class="medicine-card">
+              <div class="medicine-left">
+                <div class="medicine-thumb">
+                  <img src="assets/icons/gkdtpdwp.png" alt="항생제" />
+                </div>
+                <div class="medicine-info">
+                  <h3>저녁 08:00</h3>
+                  <p>항생제 <span>1정 복용</span></p>
+                </div>
+              </div>
+              <button class="medicine-action">복용하기</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="weekly-card">
+          <div class="weekly-head">
+            <h2>이번 주 복용률 ⓘ</h2>
+            <a href="#">자세히 보기 <span>›</span></a>
+          </div>
+
+          <div class="weekly-body">
+            <div class="rate-circle">
+              <div class="rate-inner"><strong>87</strong><span>%</span></div>
+            </div>
+
+            <div class="week-divider"></div>
+
+            <div class="week-graph">
+              <div class="graph-bars">
+                <div class="bar low"></div>
+                <div class="bar mid"></div>
+                <div class="bar high active"></div>
+                <div class="bar mid"></div>
+                <div class="bar low"></div>
+                <div class="bar low"></div>
+                <div class="bar low"></div>
+              </div>
+              <div class="graph-days">
+                <span>월</span>
+                <span>화</span>
+                <span>수</span>
+                <span>목</span>
+                <span>금</span>
+                <span>토</span>
+                <span>일</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="quick-section">
+          <h2>빠른 실행</h2>
+          <div class="quick-grid">
+            <button class="quick-card">
+              <img src="assets/icons/qhrdydrlfhr.png" alt="복용 기록" />
+              <span>복용 기록</span>
+            </button>
+            <button class="quick-card">
+              <img src="assets/icons/qhrdirzofflsej.png" alt="복약 캘린더" />
+              <span>복약 캘린더</span>
+            </button>
+            <button class="quick-card">
+              <img src="assets/icons/dkfflatjfwjd.png" alt="알림 설정" />
+              <span>알림 설정</span>
+            </button>
+            <button class="quick-card">
+              <img src="assets/icons/rjsrkdflvhxm.png" alt="건강 리포트" />
+              <span>건강 리포트</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="tip-banner">
+          <div class="tip-badge">💡 건강 팁</div>
+          <p>약은 정해진 시간에 꾸준히 복용하는 것이 가장 중요해요!</p>
+          <div class="tip-heart">
+            <img src="assets/icons/tlawkdqkrehd.png" alt="하트 아이콘" />
+          </div>
+        </section>
+      </main>
+
+      <nav class="bottom-nav">
+        <button class="nav-item active">
+          <img src="assets/icons/wlq.png" alt="홈" />
+          <span>홈</span>
+        </button>
+        <button class="nav-item">
+          <img src="assets/icons/dirrhksfl.png" alt="약 리스트" />
+          <span>약 리스트</span>
+        </button>
+        <button class="nav-item">
+          <img src="assets/icons/rlfhr.png" alt="기록" />
+          <span>기록</span>
+        </button>
+        <button class="nav-item large">
+          <img src="assets/icons/rjsrkd-8.png" alt="건강" />
+          <span>건강</span>
+        </button>
+        <button class="nav-item large">
+          <img src="assets/icons/tjfwjd-8.png" alt="마이페이지" />
+          <span>마이페이지</span>
+        </button>
+      </nav>
+    </div>
+  </body>
+</html>
