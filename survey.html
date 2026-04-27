@@ -3,8 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>약속, 설문조사첫번째</title>
+    <title>약속 설문</title>
+    <link rel="stylesheet" href="css/survey.css" />
   </head>
-  <link rel="stylesheet" href="css/survey.css" />
-  <body></body>
+  <body>
+    <div class="survey-layout">
+      <main class="survey-main">
+        <div class="survey-container">
+          <section class="survey-content">
+            <div class="survey-left">
+              <div class="progress-wrap">
+                <div class="progress-line active"></div>
+                <p class="progress-text">1 / 2</p>
+                <div class="progress-line"></div>
+              </div>
+
+              <h1 class="survey-title">
+                어떤 상황에서 약을<br />
+                자주 놓치시나요?
+              </h1>
+            </div>
+
+            <section class="survey-options">
+              <button type="button" class="option-card">
+                <img
+                  src="assets/icons/tlrp.png"
+                  alt="바쁠 때"
+                  class="option-icon"
+                />
+                <span class="option-text">바쁠 때</span>
+              </button>
+
+              <button type="button" class="option-card">
+                <img
+                  src="assets/icons/rkqkd.png"
+                  alt="외출 시"
+                  class="option-icon"
+                />
+                <span class="option-text">외출 시</span>
+              </button>
+
+              <button type="button" class="option-card">
+                <img
+                  src="assets/icons/rkajrdma.png"
+                  alt="자주 까먹음"
+                  class="option-icon"
+                />
+                <span class="option-text">자주 까먹음</span>
+              </button>
+
+              <button type="button" class="option-card">
+                <img
+                  src="assets/icons/ekffur.png"
+                  alt="규칙적이지 않음"
+                  class="option-icon"
+                />
+                <span class="option-text">규칙적이지 않음</span>
+              </button>
+            </section>
+          </section>
+        </div>
+      </main>
+
+      <button type="button" class="next-button">다음</button>
+    </div>
+  </body>
 </html>

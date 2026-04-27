@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>약속, 약리스트</title>
+    <link rel="stylesheet" href="css/medicine.css" />
+  </head>
+  <body>
+    <div class="medicine-page">
+      <header class="medicine-header">
+        <button type="button" class="back-btn">‹</button>
+        <h1>약 리스트</h1>
+        <button type="button" class="more-btn">•••</button>
+      </header>
+
+      <main class="medicine-main">
+        <div class="search-box">
+          <span class="search-icon">⌕</span>
+          <input type="text" placeholder="약 검색" />
+        </div>
+
+        <section class="medicine-section active-section">
+          <h2>복용 중인 약</h2>
+
+          <div class="medicine-card">
+            <div class="medicine-icon">
+              <img src="assets/icons/dkahekvls.png" alt="약 아이콘" />
+            </div>
+
+            <div class="medicine-info">
+              <h3>아모디핀 5mg</h3>
+              <p>혈압약 1일 1회 <span>오전 08:00</span></p>
+              <div class="tags">
+                <span>혈압</span>
+                <span>지질이상</span>
+              </div>
+            </div>
+
+            <p class="medicine-status blue">4시간 전 복용</p>
+            <a href="#">자세히</a>
+          </div>
+
+          <div class="medicine-card">
+            <div class="medicine-icon">
+              <img src="assets/icons/apxmfhvhals.png" alt="약 아이콘" />
+            </div>
+
+            <div class="medicine-info">
+              <h3>메트로포민 500mg</h3>
+              <p>혈압약 1일 1회 <br /><span>점심 12:00, 저녁 8:00</span></p>
+              <div class="tags">
+                <span>당뇨</span>
+                <span>체중관리</span>
+              </div>
+            </div>
+
+            <p class="medicine-status yellow">복용 주의</p>
+            <a href="#">자세히</a>
+          </div>
+
+          <div class="medicine-card">
+            <div class="medicine-icon">
+              <img src="assets/icons/qlxkalsb.png" alt="약 아이콘" />
+            </div>
+
+            <div class="medicine-info">
+              <h3>비타민 B 복합제</h3>
+              <p>영양제 1일 1회 <br /><span>오후 14:00</span></p>
+              <div class="tags">
+                <span>체력회복</span>
+                <span>신경관리</span>
+              </div>
+            </div>
+
+            <p class="medicine-status red">복용전</p>
+            <a href="#">자세히</a>
+          </div>
+        </section>
+
+        <section class="medicine-section inactive-section">
+          <h2>기록된 복용약이 없는 약</h2>
+
+          <div class="medicine-card">
+            <div class="medicine-icon">
+              <img src="assets/icons/qlxkalsb.png" alt="약 아이콘" />
+            </div>
+
+            <div class="medicine-info">
+              <h3>에스포정</h3>
+              <p>기록되지 않은 약</p>
+              <div class="tags">
+                <span>통증완화</span>
+              </div>
+            </div>
+
+            <a href="#">자세히</a>
+          </div>
+
+          <button type="button" class="add-medicine-btn">
+            <span>＋</span>
+            약 추가
+          </button>
+        </section>
+      </main>
+
+      <nav class="bottom-nav">
+        <a href="#" class="nav-item active">
+          <img src="assets/icons/wlq.png" alt="홈" />
+          <span>홈</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <img src="assets/icons/dirrhksfl.png" alt="약관리" />
+          <span>약 관리</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <img src="assets/icons/rlfhr.png" alt="기록" />
+          <span>기록</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <img src="assets/icons/rjsrkd-8.png" alt="건강" />
+          <span>건강</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <img src="assets/icons/tjfwjd-8.png" alt="마이페이지" />
+          <span>마이페이지</span>
+        </a>
+      </nav>
+    </div>
+  </body>
+</html>

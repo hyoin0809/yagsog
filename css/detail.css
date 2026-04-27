@@ -1,0 +1,749 @@
+/* 기본 공통 CSS */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+:root {
+  --blue-40: #bed8f5;
+  --blue-100: #5095e3;
+  --bg: #f7fbfc;
+  --text: #111;
+  --gray: #777;
+  --shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+button,
+a {
+  border: none;
+  background: none;
+  color: inherit;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+.info-card span {
+  font-size: 28px; /* 크기 키우기 */
+  color: #5095e3; /* 색 변경 (지금 블루톤) */
+  font-weight: 400;
+}
+
+.schedule-box p {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* =========================
+   모바일 0px ~ 767px
+========================= */
+@media screen and (max-width: 767px) {
+  .detail-header {
+    height: 70px;
+    padding: 0 20px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .detail-header h1 {
+    font-size: 18px;
+  }
+
+  .back-btn,
+  .more-btn {
+    font-size: 26px;
+  }
+
+  .medicine-hero {
+    background: var(--blue-40);
+    padding: 28px 20px;
+  }
+
+  .hero-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+
+  .pill-img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pill-img img {
+    width: 48px;
+  }
+
+  .hero-text h2 {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .tag-row {
+    display: flex;
+    gap: 6px;
+  }
+
+  .tag-row span {
+    background: #fff;
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 12px;
+    color: var(--blue-100);
+  }
+
+  .schedule-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .quick-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .quick-menu button {
+    background: #fff;
+    border-radius: 12px;
+    padding: 12px 6px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+
+  .quick-menu img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .content-grid {
+    padding: 24px 16px 60px;
+  }
+
+  .section-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+
+  .section-title h2,
+  .info-section h2 {
+    font-size: 16px;
+  }
+
+  .record-card,
+  .info-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+  }
+
+  .record-card {
+    position: relative;
+    padding: 20px 16px 20px 36px;
+    margin-bottom: 40px;
+  }
+
+  .record-line {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 20px;
+    width: 2px;
+    background: #cfe3fa;
+  }
+
+  .record-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .record-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .dot {
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: #80aee0;
+    border-radius: 50%;
+  }
+
+  .record-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 12px;
+    flex-shrink: 0;
+  }
+
+  .record-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .record-text h3 {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .record-text p {
+    font-size: 12px;
+    color: var(--gray);
+  }
+
+  .info-card a {
+    display: grid;
+    grid-template-columns: 40px 1fr 20px;
+    gap: 10px;
+    align-items: center;
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .info-card a:last-child {
+    border-bottom: none;
+  }
+
+  .info-card img {
+    width: 32px;
+  }
+
+  .info-card strong {
+    font-size: 14px;
+  }
+
+  .info-card p {
+    font-size: 12px;
+    color: var(--gray);
+  }
+}
+
+/* =========================
+   태블릿 768px ~ 1023px
+========================= */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .detail-main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+
+  .detail-header {
+    height: 84px;
+    padding: 0 40px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .detail-header h1 {
+    font-size: 24px;
+  }
+
+  .back-btn,
+  .more-btn {
+    font-size: 30px;
+  }
+
+  .medicine-hero {
+    background: var(--blue-40);
+    border-radius: 24px;
+    padding: 40px;
+  }
+
+  .hero-top {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 28px;
+  }
+
+  .pill-img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pill-img img {
+    width: 66px;
+  }
+
+  .hero-text h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .tag-row {
+    display: flex;
+    gap: 8px;
+  }
+
+  .tag-row span {
+    background: #fff;
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 14px;
+    color: var(--blue-100);
+  }
+
+  .schedule-box {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+  }
+
+  .quick-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  .quick-menu button {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+  }
+
+  .quick-menu img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .content-grid {
+    padding: 36px 0 80px;
+  }
+
+  .section-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .section-title h2,
+  .info-section h2 {
+    font-size: 22px;
+  }
+
+  .record-card,
+  .info-card {
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+  }
+
+  .record-card {
+    position: relative;
+    padding: 30px 28px 30px 50px;
+    margin-bottom: 46px;
+  }
+
+  .record-line {
+    position: absolute;
+    left: 42px;
+    top: 0;
+    bottom: 30px;
+    width: 3px;
+    background: #cfe3fa;
+  }
+
+  .record-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 34px;
+  }
+
+  .record-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .dot {
+    position: absolute;
+    left: -13px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: #80aee0;
+    border-radius: 50%;
+  }
+
+  .record-icon {
+    width: 38px;
+    height: 38px;
+    margin-left: 16px;
+    flex-shrink: 0;
+  }
+
+  .record-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .record-text h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .record-text p {
+    font-size: 15px;
+    color: var(--gray);
+  }
+
+  .info-card a {
+    display: grid;
+    grid-template-columns: 56px 1fr 24px;
+    gap: 16px;
+    align-items: center;
+    padding: 22px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .info-card img {
+    width: 46px;
+  }
+
+  .info-card strong {
+    font-size: 18px;
+  }
+
+  .info-card p {
+    font-size: 15px;
+    color: var(--gray);
+  }
+}
+
+/* =========================
+   데스크탑 1024px 이상
+========================= */
+@media screen and (min-width: 1024px) {
+  .detail-header {
+    max-width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    padding: 0 40px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .detail-header h1 {
+    font-size: 26px;
+  }
+
+  .back-btn,
+  .more-btn {
+    font-size: 32px;
+  }
+
+  .detail-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px 80px;
+  }
+
+  .medicine-hero {
+    background: var(--blue-40);
+    border-radius: 28px;
+    padding: 46px;
+  }
+
+  .hero-top {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 34px;
+  }
+
+  .pill-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pill-img img {
+    width: 76px;
+  }
+
+  .hero-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .hero-text p {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .tag-row {
+    display: flex;
+    gap: 10px;
+  }
+
+  .tag-row span {
+    background: #fff;
+    border-radius: 999px;
+    padding: 7px 16px;
+    font-size: 15px;
+    color: var(--blue-100);
+  }
+
+  .schedule-box {
+    background: #fff;
+    border-radius: 18px;
+    padding: 24px 28px;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .quick-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .quick-menu button {
+    background: #fff;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+  }
+
+  .quick-menu img {
+    width: 72px;
+    height: 72px;
+  }
+
+  .content-grid {
+    padding: 40px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 34px;
+  }
+
+  .section-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+
+  .section-title h2,
+  .info-section h2 {
+    font-size: 24px;
+  }
+
+  .record-card,
+  .info-card {
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+  }
+
+  .record-card {
+    position: relative;
+    padding: 36px 34px 36px 56px;
+    min-height: 260px;
+  }
+
+  .record-line {
+    position: absolute;
+    left: 46px;
+    top: 0;
+    bottom: 36px;
+    width: 3px;
+    background: #cfe3fa;
+  }
+
+  .record-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 38px;
+  }
+
+  .record-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .dot {
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: #80aee0;
+    border-radius: 50%;
+  }
+
+  .record-icon {
+    width: 42px;
+    height: 42px;
+    margin-left: 18px;
+    flex-shrink: 0;
+  }
+
+  .record-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .record-text h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .record-text p {
+    font-size: 16px;
+    color: var(--gray);
+  }
+
+  .info-card a {
+    display: grid;
+    grid-template-columns: 60px 1fr 24px;
+    gap: 18px;
+    align-items: center;
+    padding: 24px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .info-card img {
+    width: 50px;
+  }
+
+  .info-card strong {
+    font-size: 20px;
+  }
+
+  .info-card p {
+    font-size: 16px;
+    color: var(--gray);
+  }
+}
+
+.bottom-nav {
+  position: fixed;
+  margin-top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f4f4f4;
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.08);
+  padding: 14px 8px calc(14px + env(safe-area-inset-bottom));
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  z-index: 100;
+}
+
+.nav-item {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: #666;
+}
+
+.nav-item img {
+  width: 50px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.nav-item.large img {
+  width: 50px;
+  height: 26px;
+}
+
+.nav-item span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.nav-item.active {
+  color: var(--blue-100);
+}
+
+.nav-item.active span {
+  color: var(--blue-100);
+}

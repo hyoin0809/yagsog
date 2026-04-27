@@ -107,12 +107,24 @@ img {
 }
 
 .progress-fill {
-  width: 55%;
+  width: 0%;
   height: 100%;
   background: var(--blue-100);
   border-radius: 999px;
+
+  animation: loadingFill 2s ease forwards;
 }
 
+/* animation */
+@keyframes loadingFill {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
 .progress-text {
   font-size: var(--size-md);
   line-height: 1.5;
