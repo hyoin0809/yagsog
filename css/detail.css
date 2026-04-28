@@ -37,9 +37,9 @@ img {
   max-width: 100%;
 }
 .info-card span {
-  font-size: 28px; /* 크기 키우기 */
-  color: #5095e3; /* 색 변경 (지금 블루톤) */
-  font-weight: 400;
+  font-size: 28px;
+  color: #5095e3;
+  font-weight: 100;
 }
 
 .schedule-box p {
@@ -47,6 +47,21 @@ img {
   font-weight: 400;
 }
 
+.schedule-box span {
+  font-size: 13px;
+  color: #769fcd;
+}
+
+.title-link span {
+  font-size: 24px;
+  color: #000000;
+  font-weight: 100;
+}
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 /* =========================
    모바일 0px ~ 767px
 ========================= */
@@ -62,11 +77,13 @@ img {
 
   .detail-header h1 {
     font-size: 18px;
+    font-weight: 600;
   }
 
   .back-btn,
   .more-btn {
     font-size: 26px;
+    color: #769fcd;
   }
 
   .medicine-hero {
@@ -92,7 +109,7 @@ img {
   }
 
   .pill-img img {
-    width: 48px;
+    width: 500px;
   }
 
   .hero-text h2 {
@@ -152,7 +169,7 @@ img {
   }
 
   .content-grid {
-    padding: 24px 16px 60px;
+    padding: 24px 16px 160px;
   }
 
   .section-title {
@@ -163,6 +180,7 @@ img {
 
   .section-title h2,
   .info-section h2 {
+    display: flex;
     font-size: 16px;
   }
 
@@ -282,11 +300,13 @@ img {
 
   .detail-header h1 {
     font-size: 24px;
+    font-weight: 600;
   }
 
   .back-btn,
   .more-btn {
     font-size: 30px;
+    color: #769fcd;
   }
 
   .medicine-hero {
@@ -313,7 +333,7 @@ img {
   }
 
   .pill-img img {
-    width: 66px;
+    width: 100px;
   }
 
   .hero-text h2 {
@@ -396,7 +416,7 @@ img {
 
   .record-card {
     position: relative;
-    padding: 30px 28px 30px 50px;
+    padding: 20px 28px 30px 40px;
     margin-bottom: 46px;
   }
 
@@ -423,7 +443,7 @@ img {
 
   .dot {
     position: absolute;
-    left: -13px;
+    left: -2px;
     top: 50%;
     transform: translateY(-50%);
     width: 12px;
@@ -618,15 +638,15 @@ img {
 
   .record-card {
     position: relative;
-    padding: 36px 34px 36px 56px;
-    min-height: 260px;
+    padding: 20px 28px 30px 40px;
+    margin-bottom: 46px;
   }
 
   .record-line {
     position: absolute;
     left: 46px;
     top: 0;
-    bottom: 36px;
+    bottom: 1px;
     width: 3px;
     background: #cfe3fa;
   }
@@ -645,7 +665,7 @@ img {
 
   .dot {
     position: absolute;
-    left: -15px;
+    left: 1px;
     top: 50%;
     transform: translateY(-50%);
     width: 12px;
@@ -697,6 +717,10 @@ img {
   .info-card p {
     font-size: 16px;
     color: var(--gray);
+  }
+
+  .section-title a {
+    size: 23px;
   }
 }
 

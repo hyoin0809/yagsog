@@ -1,0 +1,376 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+:root {
+  --blue-100: #5095e3;
+  --bg: #f7fbfc;
+  --text: #111;
+  --gray: #666;
+  --line: #e5e5e5;
+  --danger: #f25454;
+  --shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+button,
+a {
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =========================
+   모바일 0px ~ 767px
+========================= */
+@media screen and (max-width: 767px) {
+  .mypage-header {
+    height: 74px;
+    padding: 0 24px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    align-items: center;
+    border-bottom: 1px solid #eef1f3;
+  }
+
+  .mypage-header h1 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+  }
+
+  .back-btn {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .mypage-main {
+    padding-bottom: 110px;
+  }
+
+  .profile-card {
+    background: #fff;
+    padding: 28px 54px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .profile-card img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .profile-text h2 {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+
+  .profile-text p {
+    font-size: 20px;
+  }
+
+  .menu-section {
+    margin-top: 36px;
+    background: #fff;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .menu-section + .menu-section {
+    margin-top: 56px;
+  }
+
+  .menu-item {
+    height: 84px;
+    padding: 0 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .menu-item:last-child {
+    border-bottom: none;
+  }
+
+  .menu-item strong {
+    font-size: 42px;
+    color: #7aa6d8;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  .menu-item em {
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .logout-btn {
+    width: 292px;
+    height: 56px;
+    margin: 76px auto 0;
+    background: var(--danger);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+  }
+}
+
+/* =========================
+   태블릿 768px ~ 1023px
+========================= */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .mypage-header {
+    height: 84px;
+    padding: 0 40px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    border-bottom: 1px solid #eef1f3;
+  }
+
+  .mypage-header h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  .back-btn {
+    font-size: 42px;
+  }
+
+  .mypage-main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 34px 36px 120px;
+  }
+
+  .profile-card {
+    background: #fff;
+    padding: 34px 42px;
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 34px;
+  }
+
+  .profile-card img {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .profile-text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .profile-text p {
+    font-size: 22px;
+  }
+
+  .menu-section {
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
+  .menu-item {
+    height: 86px;
+    padding: 0 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+    font-size: 21px;
+    font-weight: 600;
+  }
+
+  .menu-item:last-child {
+    border-bottom: none;
+  }
+
+  .menu-item strong {
+    font-size: 42px;
+    color: #7aa6d8;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  .menu-item em {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .logout-btn {
+    width: 340px;
+    height: 62px;
+    margin: 54px auto 0;
+    background: var(--danger);
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    display: block;
+    font-size: 22px;
+    font-weight: 800;
+  }
+}
+
+/* =========================
+   웹 1024px 이상
+========================= */
+@media screen and (min-width: 1024px) {
+  /* 🔥 헤더 정상화 */
+  .mypage-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    height: 90px;
+
+    display: grid;
+    grid-template-columns: 48px 1fr 48px;
+    align-items: center;
+  }
+
+  .mypage-header h1 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  .back-btn {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .mypage-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px 120px;
+
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    grid-template-areas:
+      "profile menu1"
+      "logout menu2";
+
+    column-gap: 32px;
+    row-gap: 24px;
+    align-items: start;
+  }
+  .profile-card {
+    grid-area: profile;
+    background: #fff;
+    padding: 36px 28px;
+    border-radius: 28px;
+    box-shadow: var(--shadow);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .profile-card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .profile-text h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+
+  .profile-text p {
+    font-size: 22px;
+    color: var(--gray);
+  }
+
+  .menu-section {
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .menu-section:nth-of-type(2) {
+    grid-area: menu1;
+  }
+
+  .menu-section:nth-of-type(3) {
+    grid-area: menu2;
+  }
+
+  .menu-item {
+    height: 86px;
+    padding: 0 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+    font-size: 21px;
+    font-weight: 600;
+  }
+
+  .menu-item:last-child {
+    border-bottom: none;
+  }
+
+  .menu-item strong {
+    font-size: 42px;
+    color: #7aa6d8;
+    font-weight: 400;
+  }
+
+  .logout-btn {
+    grid-area: logout;
+    width: 100%;
+    height: 60px;
+    background: var(--danger);
+    color: #fff;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    font-size: 21px;
+    font-weight: 800;
+  }
+}
