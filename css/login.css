@@ -51,6 +51,9 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
 .loading-layout {
   width: 100%;
   min-height: 100vh;

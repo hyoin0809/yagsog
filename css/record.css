@@ -33,6 +33,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* 모바일 */
 @media screen and (max-width: 767px) {
   .record-header {
@@ -46,7 +50,7 @@ img {
   .record-header h1 {
     text-align: center;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .back-btn {
@@ -278,7 +282,7 @@ img {
   .record-header h1 {
     text-align: center;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .back-btn {
@@ -488,7 +492,7 @@ img {
   .record-header h1 {
     text-align: center;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .back-btn {
