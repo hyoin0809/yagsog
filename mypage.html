@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>마이페이지</title>
     <link rel="stylesheet" href="css/mypage.css" />
+    <script src="js/mypage.js" defer></script>
   </head>
   <body>
     <div class="mypage-layout">
       <header class="mypage-header">
-        <button class="back-btn">‹</button>
+        <a href="main.html" class="back-btn">‹</a>
         <h1>마이페이지</h1>
         <span></span>
       </header>
@@ -61,5 +62,49 @@
         <button class="logout-btn">로그아웃</button>
       </main>
     </div>
+
+    <div class="logout-modal" id="logoutModal">
+      <div class="logout-box">
+        <div class="logout-icon">↪</div>
+
+        <h2>로그아웃 하시겠습니까?</h2>
+        <p>
+          현재 사용 중인 계정에서 로그아웃 됩니다.<br />
+          필요할 때 다시 로그인 해서 이용할 수 있어요.
+        </p>
+
+        <div class="logout-actions">
+          <button type="button" class="cancel-btn">계속 이용하기</button>
+          <button type="button" class="confirm-btn">로그아웃</button>
+        </div>
+      </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <a href="#" class="nav-item active">
+        <img src="assets/icons/wlq.png" alt="홈" />
+        <span>홈</span>
+      </a>
+
+      <a href="medicine.html" class="nav-item">
+        <img src="assets/icons/dirrhksfl.png" alt="약관리" />
+        <span>약 관리</span>
+      </a>
+
+      <a href="record.html" class="nav-item">
+        <img src="assets/icons/rlfhr.png" alt="기록" />
+        <span>기록</span>
+      </a>
+
+      <a href="#" class="nav-item">
+        <img src="assets/icons/rjsrkd-8.png" alt="건강" />
+        <span>건강</span>
+      </a>
+
+      <a href="mypage.html" class="nav-item">
+        <img src="assets/icons/tjfwjd-8.png" alt="마이페이지" />
+        <span>마이페이지</span>
+      </a>
+    </nav>
   </body>
 </html>

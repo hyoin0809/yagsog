@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>알림 설정</title>
+    <link rel="stylesheet" href="css/alarm.css" />
+  </head>
+  <body>
+    <div class="alarm-layout">
+      <header class="alarm-header">
+        <a href="main.html" class="back-btn">‹</a>
+        <h1>알림 설정</h1>
+        <span></span>
+      </header>
+
+      <main class="alarm-main">
+        <section class="top-section">
+          <div class="alarm-card">
+            <div class="section-title">
+              <h2>전체 알림</h2>
+              <p>앱 전체 알림을 설정합니다.</p>
+            </div>
+
+            <div class="setting-item round">
+              <span>전체 알림</span>
+              <button type="button" class="toggle-btn"></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="setting-section">
+          <h2>약 복용 알림</h2>
+
+          <div class="setting-list">
+            <div class="setting-item">
+              <div>
+                <strong>정해진 복용 시간 알림</strong>
+                <p>정해놓은 시간에 맞춰 약 복용 알림을 받습니다.</p>
+              </div>
+              <button type="button" class="toggle-btn"></button>
+            </div>
+
+            <div class="setting-item">
+              <div>
+                <strong>복용 누락 시 알림</strong>
+                <p>약 복용이 누락되었을 때 추가 알림을 받습니다.</p>
+              </div>
+              <button type="button" class="toggle-btn"></button>
+            </div>
+
+            <a href="#" class="setting-item">
+              <strong>알림 소리 및 진동</strong>
+              <em>›</em>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <nav class="bottom-nav">
+        <a href="#" class="nav-item active">
+          <img src="assets/icons/wlq.png" alt="홈" />
+          <span>홈</span>
+        </a>
+
+        <a href="medicine.html" class="nav-item">
+          <img src="assets/icons/dirrhksfl.png" alt="약관리" />
+          <span>약 관리</span>
+        </a>
+
+        <a href="record.html" class="nav-item">
+          <img src="assets/icons/rlfhr.png" alt="기록" />
+          <span>기록</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <img src="assets/icons/rjsrkd-8.png" alt="건강" />
+          <span>건강</span>
+        </a>
+
+        <a href="mypage.html" class="nav-item">
+          <img src="assets/icons/tjfwjd-8.png" alt="마이페이지" />
+          <span>마이페이지</span>
+        </a>
+      </nav>
+    </div>
+    <script>
+      const toggleBtns = document.querySelectorAll(".toggle-btn");
+
+      toggleBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          btn.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

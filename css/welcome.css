@@ -37,6 +37,10 @@ body {
   color: #111;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* layout */
 .welcome-layout {
   min-height: 100vh;
@@ -80,8 +84,6 @@ body {
 .welcome-image {
   width: 100%;
 }
-
-/* 버튼 */
 .start-button {
   width: 90%;
   max-width: 420px;
@@ -92,8 +94,10 @@ body {
   color: #fff;
   font-size: var(--size-2xl);
   font-weight: 600;
-  display: block;
-  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 /* tablet */
